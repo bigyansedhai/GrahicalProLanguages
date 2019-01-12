@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace GraphicalProLanguages
 {
-   public class Sqaure:Shape
+  public abstract class AbstractFactory
     {
-        public void draw()
-        {
+        public abstract Shape getShape(string shapeType);
+        
 
-        }
+       
     }
 }
