@@ -7,6 +7,9 @@ using System.Drawing;
 
 namespace GraphicalProLanguages
 {
+    /// <summary>
+    /// create Polygon Class inherit method from Shape Interface
+    /// </summary>
    public class Polygon:Shape
     {
 
