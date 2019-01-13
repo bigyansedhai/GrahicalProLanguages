@@ -42,7 +42,7 @@ namespace GraphicalProLanguages
         /// <param name="g"></param>
         public void draw(Graphics g)
         {
-            g.DrawEllipse(myPen, x-radius, y-radius, radius * 2,radius * 2);
+           // g.DrawEllipse(myPen, x-radius, y-radius, radius * 2,radius * 2);
            // g.FillEllipse(brush, x, y, radius, radius);
 
 
