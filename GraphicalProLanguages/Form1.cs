@@ -161,7 +161,10 @@ namespace GraphicalProLanguages
             b.SetToolTip(btnHelp, "Click Me To Access For See Help File");
 
         }
-
+        /// <summary>
+        /// passing parameter Graphics g use in draw method
+        /// </summary>
+        /// <param name="g"></param>
         public void draw(Graphics g)
         {
             g.DrawLine(myPen, x, y, toX, toY);
@@ -175,7 +178,7 @@ namespace GraphicalProLanguages
         private void btnHelp_Click(object sender, EventArgs e)
         {
 
-            System.Diagnostics.Process.Start("file:///D:/The%20British%20college/advance%20software/screenShot/helpfileGraphics.pdf");
+            System.Diagnostics.Process.Start("file:///D:/The%20British%20college/advance%20software/c720272Bigyan%20Sedhai/helpfileGraphics.pdf");
         }
 
         public void set(params int[] list)
