@@ -6,8 +6,16 @@ using System.Threading.Tasks;
 
 namespace GraphicalProLanguages
 {
-  public abstract class AbstractFactory
+    /// <summary>
+    /// create abstract Class 
+    /// </summary><param>getShap</param>
+    public abstract class AbstractFactory
     {
+        /// <summary>
+        /// passing string type parameter in gettShape Method inherit Shape Interface
+        /// </summary>
+        /// <param name="shapeType"></param>
+        /// <returns></returns>
         public abstract Shape getShape(string shapeType);
         
 

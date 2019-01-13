@@ -14,21 +14,17 @@ namespace GraphicalProLanguages
         /// declear variable
         /// create constructor
         /// </summary>
+        public int x, y, width, height;
         Pen mypen = new Pen(Color.Beige);
-        SolidBrush brush = new SolidBrush(Color.Black);
-      public  int x, y, width, height;
+        SolidBrush brush = new SolidBrush(Color.Black); 
         /// <summary>
         /// Constructyor Create Polygon
         /// </summary>
         
- public Polygon()
+         public Polygon()
         {
             this.x = 0;
-            this.y = 0;
-           
-
-
-           
+            this.y = 0;         
         }
 
         /// <summary>
@@ -43,7 +39,11 @@ namespace GraphicalProLanguages
             this.height = height;
         }
 
-
+        /// <summary>
+        /// passing parameter Graphics g
+        /// draw method Inherit from Shape
+        /// </summary>
+        /// <param name="g"></param>
         public void draw(Graphics g)
         {
             Pen mypen = new Pen(Color.Black);
