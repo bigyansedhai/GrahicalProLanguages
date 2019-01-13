@@ -44,7 +44,11 @@ namespace GraphicalProLanguages
                 
 
                 return new Polygon();
-            }          
+            }
+            else if(shapeType =="3drectangle")
+            {
+                return new _3DRectangle();
+            }
             else
             {
                 return null;

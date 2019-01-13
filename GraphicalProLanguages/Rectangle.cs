@@ -15,7 +15,7 @@ namespace GraphicalProLanguages
         /// </summary>
         Pen myPen = new Pen(Color.Black);
         SolidBrush brush = new SolidBrush(Color.Black);
-        int x, y, width, height;
+        public int x, y, width, height;
 
         public Rectangle():base()
         {

@@ -9,20 +9,17 @@ using System.Threading.Tasks;
 namespace GraphicalProLanguages.Tests
 {
     [TestClass()]
-    public class RectangleTests
+    public class PolygonTests
     {
-        
-
-      
         [TestMethod()]
         public void setTest()
         {
-            Rectangle r = new Rectangle();
+            Polygon p = new Polygon();
             int x = 100, y = 100, width = 200, height = 100;
 
-            r.set(x, y, width, height);
+            p.set(x, y, width, height);
 
-            Assert.AreEqual(x, r.x);
+            Assert.AreEqual(x, width, p.width);
         }
     }
 }

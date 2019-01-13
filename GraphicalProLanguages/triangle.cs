@@ -15,7 +15,7 @@ namespace GraphicalProLanguages
         /// </summary>
         Pen mypen = new Pen(Color.Red);
         SolidBrush brush = new SolidBrush(Color.Red);
-        int x, y, width, height;
+      public  int x, y, width, height;
         
 
         /// <summary>

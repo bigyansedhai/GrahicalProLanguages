@@ -8,17 +8,28 @@ using System.Drawing;
 
 namespace GraphicalProLanguages
 {
-
+    /// <summary>
+    /// Create Class Of Circle and Inherit Interface of Shape
+    /// </summary>
    public class Circle:Shape
     {
         Pen myPen = new Pen(System.Drawing.Color.Black);
         SolidBrush brush = new SolidBrush(Color.Blue);
-        int x, y, radius;
+       public int x, y, radius;
+
+        /// <summary>
+        /// Create Constructor passing No parameter
+        /// </summary>
+
         public Circle():base()
         {
             x = 0;
             y = 0;
         }
+        /// <summary>
+        /// Create Constructor Passing Parameter
+        /// </summary>
+        /// <param name="radius"></param>
         public Circle(int radius)
         {
             this.radius = radius;
@@ -31,7 +42,7 @@ namespace GraphicalProLanguages
         /// <param name="g"></param>
         public void draw(Graphics g)
         {
-            g.DrawEllipse(myPen, x, y, radius,radius);
+            g.DrawEllipse(myPen, x-radius, y-radius, radius * 2,radius * 2);
            // g.FillEllipse(brush, x, y, radius, radius);
 
 

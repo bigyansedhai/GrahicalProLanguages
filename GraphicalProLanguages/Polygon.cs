@@ -16,7 +16,10 @@ namespace GraphicalProLanguages
         /// </summary>
         Pen mypen = new Pen(Color.Beige);
         SolidBrush brush = new SolidBrush(Color.Black);
-        int x, y, width, height;
+      public  int x, y, width, height;
+        /// <summary>
+        /// Constructyor Create Polygon
+        /// </summary>
         
  public Polygon()
         {
@@ -43,28 +46,31 @@ namespace GraphicalProLanguages
 
         public void draw(Graphics g)
         {
-            //Pen blackPen = new Pen(Color.Black, 3);
-           // g.Clear(Color.Black);
+            Pen mypen = new Pen(Color.Black);
+            SolidBrush brush = new SolidBrush(Color.Yellow);
+            // g.Clear(Color.Black);
             // Create points that define polygon.
             Point point1 = new Point(x, y-(height/2));
-            Point point2 = new Point(x-(width/2), y+(height/2));
+            Point point2 = new Point(x-width, y+(height/2));
             Point point3 = new Point(x+(width/2), y+(height/2));
-            Point point4 = new Point(x+width, y-height);
-            Point point5 = new Point(x-width, y-height);
-           
+
+            Point point4 = new Point(x + (width), y - (height * 4));
+         
+
+
             Point[] curvePoints =
                      {
                  point1,
                  point2,
                  point3,
                  point4,
-                 point5
+                
+                 
               
                  
              };
             g.DrawPolygon(mypen,curvePoints);
-            
-            // g.FillPolygon(brush, curvePoints);
+            g.FillPolygon(brush, curvePoints);
 
         }
         /// <summary>

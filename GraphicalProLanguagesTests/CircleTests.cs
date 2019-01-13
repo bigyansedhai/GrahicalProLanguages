@@ -9,20 +9,18 @@ using System.Threading.Tasks;
 namespace GraphicalProLanguages.Tests
 {
     [TestClass()]
-    public class RectangleTests
+    public class CircleTests
     {
-        
-
-      
         [TestMethod()]
+      
+    
         public void setTest()
         {
-            Rectangle r = new Rectangle();
-            int x = 100, y = 100, width = 200, height = 100;
+            int x= 0, y =0, radius= 100;
+            Circle c = new Circle();
+            c.set(x, y, radius);
+            Assert.AreEqual(x, radius, c.radius);
 
-            r.set(x, y, width, height);
-
-            Assert.AreEqual(x, r.x);
         }
     }
 }
